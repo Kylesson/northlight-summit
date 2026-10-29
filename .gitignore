@@ -3,3 +3,5 @@ node_modules/
 .polish/
 *.log
 _raw/
+dist/
+portfolio/

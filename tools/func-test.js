@@ -3,7 +3,7 @@ const ok=(c,m)=>console.log((c?'PASS ':'FAIL ')+m);
 (async()=>{const b=await chromium.launch({channel:'chrome'});
 const p=await b.newPage({viewport:{width:390,height:650},locale:'en-US'});
 const errs=[];p.on('pageerror',e=>errs.push(e.message));p.on('console',m=>m.type()==='error'&&errs.push(m.text()));
-await p.goto('http://localhost:5500/');await p.evaluate(()=>document.fonts.ready);
+await p.goto((process.argv[2]||'http://localhost:5500/'));await p.evaluate(()=>document.fonts.ready);
 ok(await p.evaluate(()=>document.documentElement.lang)==='en','defaults to EN for en-US');
 ok(/\d/.test(await p.textContent('[data-u=d]')),'countdown shows days: '+await p.textContent('[data-u=d]')+' '+await p.textContent('[data-u-l=d]'));
 ok(await p.isHidden('#other-wrap'),'other-diet field hidden by default');
