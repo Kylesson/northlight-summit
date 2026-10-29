@@ -142,7 +142,7 @@ tabs.forEach((t, i) => {
 const OFF = [[30,34,70,62],[64,30,36,70],[50,72,40,28],[28,62,72,40],[70,66,34,32],[42,26,62,74]];
 $$('[data-av]').forEach(e => {
   const [ini, n] = e.dataset.av.split(' '), [ax, ay, bx, by] = OFF[n];
-  e.innerHTML = `<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><circle cx="${ax}" cy="${ay}" r="34" fill="#E4FF3A"/><circle cx="${bx}" cy="${by}" r="34" fill="#F3EFE6" style="mix-blend-mode:multiply"/><text x="50" y="58" text-anchor="middle" font-family="Unbounded" font-weight="800" font-size="24" fill="#17151F" letter-spacing="-.5">${ini}</text></svg>`;
+  e.innerHTML = `<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><circle cx="${ax}" cy="${ay}" r="34" fill="#E4FF3A"/><circle cx="${bx}" cy="${by}" r="34" fill="#F3EFE6" style="mix-blend-mode:multiply"/><text x="50" y="58" text-anchor="middle" font-family="Unbounded" font-weight="800" font-size="24" fill="#F3EFE6" style="mix-blend-mode:difference" letter-spacing="-.5">${ini}</text></svg>`;
 });
 
 /* tickets -> form */
@@ -156,7 +156,7 @@ $$('[data-tier]').forEach(b => b.addEventListener('click', () => {
 function summary(){
   const t = F.tier.value;
   $('#sum-tier').textContent = t ? MSG[lang].tiers[t] : (lang === 'ru' ? RU.sumNone : EN.sumNone);
-  $('#sum-price').textContent = '€' + (PRICE[t] || 0);
+  $('#sum-price').textContent = t ? '€' + PRICE[t] : (lang === 'ru' ? RU : EN).chipFrom;
 }
 form.addEventListener('change', e => {
   if (e.target.name === 'tier') { summary(); clearErr('tier'); }
