@@ -4,7 +4,7 @@ const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [..
 // EN lives in the HTML; RU here. EN is read back from the DOM on first switch.
 const RU = {
   skip:'Перейти к регистрации', register:'Регистрация',
-  promise:'Одна суббота, когда дизайн и код наконец встречаются.',
+  promise:'Суббота, когда дизайн и код наконец встречаются.',
   chipDate:'Сб, 17 апреля 2027', chipCity:'Рига', chipFrom:'от €89',
   countH:'До открытия дверей', countEnd:'Эта конференция уже прошла. До встречи в следующем году.',
   whyW:'ЗАЧЕМ',
