@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northlight Summit 2027 · Design + Code · Riga, 17 April</title>
+<meta name="description" content="A one-day design and code conference in Riga. Two tracks, six speakers, one Saturday. Concept project.">
+<meta name="theme-color" content="#2433D6">
+<meta property="og:title" content="Northlight Summit 2027">
+<meta property="og:description" content="One Saturday where design and code finally meet. Riga, 17 April 2027.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/unbounded-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#register" data-i18n="skip">Skip to registration</a>
+
+<header class="bar">
+  <a class="mark" href="#top" aria-label="Northlight Summit, back to top">Northlight<span> Summit</span></a>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-lang="en" aria-pressed="true">EN</button>
+    <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+  </div>
+  <a class="btn btn-acid" href="#register" data-i18n="register">Register</a>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="h1">
+    <div class="hero-field" aria-hidden="true"></div>
+    <h1 class="hero-title" id="h1"><span class="fit">NORTH</span><span class="fit">LIGHT</span><span class="sr"> Summit 2027</span></h1>
+    <div class="hero-foot">
+      <p class="promise" data-i18n="promise">One Saturday where design and code finally meet.</p>
+      <ul class="chips">
+        <li data-i18n="chipDate">Sat 17 April 2027</li>
+        <li data-i18n="chipCity">Riga</li>
+        <li data-i18n="chipFrom">from €89</li>
+      </ul>
+      <a class="btn btn-ink btn-lg" href="#register" data-i18n="register">Register</a>
+    </div>
+  </section>
+
+  <section class="count" aria-labelledby="count-h">
+    <h2 class="count-h" id="count-h" data-i18n="countH">Doors open in</h2>
+    <div class="tiles" aria-hidden="true">
+      <div class="tile"><b data-u="d">--</b><span data-u-l="d">days</span></div>
+      <div class="tile"><b data-u="h">--</b><span data-u-l="h">hours</span></div>
+      <div class="tile"><b data-u="m">--</b><span data-u-l="m">minutes</span></div>
+      <div class="tile"><b data-u="s">--</b><span data-u-l="s">seconds</span></div>
+    </div>
+    <p class="sr" aria-live="polite" id="count-live"></p>
+    <p class="count-end" hidden data-i18n="countEnd">This edition has ended. See you next year.</p>
+  </section>
+
+  <section class="sec" id="why" aria-labelledby="why-h">
+    <h2 class="word" id="why-h"><span class="fit" data-i18n="whyW">WHY</span></h2>
+    <ol class="outcomes">
+      <li class="panel"><span class="num" aria-hidden="true">1</span>
+        <h3 data-i18n="o1h">A handoff that works</h3>
+        <p data-i18n="o1p">Leave with a design-to-code process your team can start using on Monday.</p></li>
+      <li class="panel"><span class="num" aria-hidden="true">2</span>
+        <h3 data-i18n="o2h">Systems, live on stage</h3>
+        <p data-i18n="o2p">Watch real design systems get built, broken and fixed in front of you.</p></li>
+      <li class="panel"><span class="num" aria-hidden="true">3</span>
+        <h3 data-i18n="o3h">Both sides in one room</h3>
+        <p data-i18n="o3p">Meet the people on the other end of your handoff over lunch, not in a ticket queue.</p></li>
+    </ol>
+  </section>
+
+  <section class="sec" id="schedule" aria-labelledby="sch-h">
+    <h2 class="word" id="sch-h"><span class="fit" data-i18n="schW">SCHEDULE</span></h2>
+    <div class="tracks">
+      <p class="track track-d"><b data-i18n="tdName">Design</b> <span data-i18n="tdLine">from idea to interface</span></p>
+      <p class="track track-c"><b data-i18n="tcName">Code</b> <span data-i18n="tcLine">from interface to production</span></p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Track">
+      <button role="tab" id="tab-all" aria-controls="slots" aria-selected="true" data-show="all" data-i18n="tabAll">All</button>
+      <button role="tab" id="tab-d" aria-controls="slots" aria-selected="false" tabindex="-1" data-show="d" data-i18n="tdName">Design</button>
+      <button role="tab" id="tab-c" aria-controls="slots" aria-selected="false" tabindex="-1" data-show="c" data-i18n="tcName">Code</button>
+    </div>
+    <div class="slots" id="slots" role="tabpanel" aria-labelledby="tab-all" data-show="all" tabindex="0">
+      <div class="slot shared"><time>09:30</time><div class="talk"><h3 data-i18n="s1">Doors open, coffee and badges</h3></div></div>
+      <div class="slot shared"><time>10:00</time><div class="talk"><h3 data-i18n="s2">Keynote: The handoff is the product</h3><p>Mara Lind</p></div></div>
+      <div class="slot"><time>11:00</time>
+        <div class="talk d"><h3 data-i18n="s3d">Tokens that survive a rebrand</h3><p data-i18n="nIlze">Ilze Ozola</p></div>
+        <div class="talk c"><h3 data-i18n="s3c">Components without a review queue</h3><p data-i18n="nArturs">Arturs Kalns</p></div></div>
+      <div class="slot"><time>12:15</time>
+        <div class="talk d"><h3 data-i18n="s4d">Prototype in the browser, not in slides</h3><p data-i18n="nNadia">Nadia Petrova</p></div>
+        <div class="talk c"><h3 data-i18n="s4c">CSS that designers can read</h3><p data-i18n="nTomas">Tomas Berg</p></div></div>
+      <div class="slot shared"><time>13:15</time><div class="talk"><h3 data-i18n="s5">Lunch</h3></div></div>
+      <div class="slot"><time>14:30</time>
+        <div class="talk d"><h3 data-i18n="s6d">Workshop: from sketch to tokens</h3><p data-i18n="nIlzeNadia">Ilze Ozola, Nadia Petrova</p></div>
+        <div class="talk c"><h3 data-i18n="s6c">Workshop: from tokens to components</h3><p data-i18n="nArtursTomas">Arturs Kalns, Tomas Berg</p></div></div>
+      <div class="slot shared"><time>16:30</time><div class="talk"><h3 data-i18n="s7">Panel: Who owns the design system?</h3><p data-i18n="sAll">All speakers</p></div></div>
+      <div class="slot shared"><time>17:30</time><div class="talk"><h3 data-i18n="s8">Closing talk: One team, two toolkits</h3><p data-i18n="nEva">Eva Sorokina</p></div></div>
+      <div class="slot shared"><time>18:15</time><div class="talk"><h3 data-i18n="s9">Drinks and conversations until 19:00</h3></div></div>
+    </div>
+  </section>
+
+  <section class="sec" id="speakers" aria-labelledby="spk-h">
+    <h2 class="word" id="spk-h"><span class="fit" data-i18n="spkW">SPEAKERS</span></h2>
+    <ul class="speakers">
+      <li class="panel spk"><span class="av" data-av="ML 0"></span><h3>Mara Lind</h3><p class="role" data-i18n="r1">Design director, Fieldnote Studio<br>Stockholm</p><p class="spk-talk"><span class="chip-both" data-i18n="both">Keynote</span> <span data-i18n="s2t">The handoff is the product</span></p></li>
+      <li class="panel spk"><span class="av" data-av="IO 1"></span><h3 data-i18n="nIlze">Ilze Ozola</h3><p class="role" data-i18n="r2">Design systems lead, Kvadrats<br>Riga</p><p class="spk-talk"><span class="chip-d" data-i18n="tdName">Design</span> <span data-i18n="s3d">Tokens that survive a rebrand</span></p></li>
+      <li class="panel spk"><span class="av" data-av="AK 2"></span><h3 data-i18n="nArturs">Arturs Kalns</h3><p class="role" data-i18n="r3">Front-end engineer, Pine Yard<br>Riga</p><p class="spk-talk"><span class="chip-c" data-i18n="tcName">Code</span> <span data-i18n="s3c">Components without a review queue</span></p></li>
+      <li class="panel spk"><span class="av" data-av="NP 3"></span><h3 data-i18n="nNadia">Nadia Petrova</h3><p class="role" data-i18n="r4">Product designer, Tallow<br>Tallinn</p><p class="spk-talk"><span class="chip-d" data-i18n="tdName">Design</span> <span data-i18n="s4d">Prototype in the browser, not in slides</span></p></li>
+      <li class="panel spk"><span class="av" data-av="TB 4"></span><h3 data-i18n="nTomas">Tomas Berg</h3><p class="role" data-i18n="r5">CSS engineer, Grain Works<br>Copenhagen</p><p class="spk-talk"><span class="chip-c" data-i18n="tcName">Code</span> <span data-i18n="s4c">CSS that designers can read</span></p></li>
+      <li class="panel spk"><span class="av" data-av="ES 5"></span><h3 data-i18n="nEva">Eva Sorokina</h3><p class="role" data-i18n="r6">Head of product, Lumen Desk<br>Vilnius</p><p class="spk-talk"><span class="chip-both" data-i18n="closing">Closing</span> <span data-i18n="s8t">One team, two toolkits</span></p></li>
+    </ul>
+  </section>
+
+  <section class="sec" id="tickets" aria-labelledby="tix-h">
+    <h2 class="word" id="tix-h"><span class="fit" data-i18n="tixW">TICKETS</span></h2>
+    <div class="tickets">
+      <article class="panel tix">
+        <h3 data-i18n="tEarly">Early</h3>
+        <p class="price">€89</p>
+        <p class="tix-note" data-i18n="tEarlyNote">Until 31 January 2027</p>
+        <ul data-i18n="tEarlyList"><li>All talks, both tracks</li><li>One workshop seat</li><li>Lunch, coffee and drinks</li><li>Recordings after the event</li></ul>
+        <button class="btn btn-ink" type="button" data-tier="early" data-i18n="cEarly">Choose Early</button>
+      </article>
+      <article class="panel tix tix-hot">
+        <span class="hot" data-i18n="hot">Selling fast</span>
+        <h3 data-i18n="tStd">Standard</h3>
+        <p class="price">€149</p>
+        <p class="tix-note" data-i18n="tStdNote">From 1 February 2027</p>
+        <ul data-i18n="tStdList"><li>All talks, both tracks</li><li>One workshop seat</li><li>Lunch, coffee and drinks</li><li>Recordings after the event</li></ul>
+        <button class="btn btn-acid" type="button" data-tier="standard" data-i18n="cStd">Choose Standard</button>
+      </article>
+      <article class="panel tix">
+        <h3>VIP</h3>
+        <p class="price">€290</p>
+        <p class="tix-note" data-i18n="tVipNote">Everything in Standard, plus</p>
+        <ul data-i18n="tVipList"><li>Speaker dinner on Friday 16 April</li><li>Reserved seats in the first rows</li><li>Both workshops</li><li>Printed programme and tote</li></ul>
+        <button class="btn btn-ink" type="button" data-tier="vip" data-i18n="cVip">Choose VIP</button>
+      </article>
+    </div>
+    <p class="boss"><span data-i18n="boss">Need approval first?</span> <button type="button" class="link" id="copy-note" data-i18n="bossBtn">Copy a short note for your manager</button> <span class="copied" role="status" id="copied"></span></p>
+  </section>
+
+  <section class="sec form-sec" id="register" aria-labelledby="reg-h">
+    <h2 class="reg-h" id="reg-h" data-i18n="regH">Register for Northlight Summit</h2>
+    <div class="reg">
+      <form class="panel form" id="form" novalidate>
+        <div class="field">
+          <label for="f-name" data-i18n="fName">Full name</label>
+          <input id="f-name" name="name" autocomplete="name" required aria-describedby="e-name">
+          <p class="err" id="e-name"></p>
+        </div>
+        <div class="field">
+          <label for="f-email" data-i18n="fEmail">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="e-email">
+          <p class="err" id="e-email"></p>
+        </div>
+        <fieldset class="field" aria-describedby="e-tier">
+          <legend data-i18n="fTier">Ticket</legend>
+          <div class="radios">
+            <label class="radio"><input type="radio" name="tier" value="early"><span><b data-i18n="tEarly">Early</b> €89</span></label>
+            <label class="radio"><input type="radio" name="tier" value="standard"><span><b data-i18n="tStd">Standard</b> €149</span></label>
+            <label class="radio"><input type="radio" name="tier" value="vip"><span><b>VIP</b> €290</span></label>
+          </div>
+          <p class="err" id="e-tier"></p>
+        </fieldset>
+        <div class="field">
+          <label for="f-diet" data-i18n="fDiet">Dietary needs</label>
+          <select id="f-diet" name="diet">
+            <option value="none" data-i18n="dNone">None</option>
+            <option value="vegetarian" data-i18n="dVeg">Vegetarian</option>
+            <option value="vegan" data-i18n="dVegan">Vegan</option>
+            <option value="gluten" data-i18n="dGluten">Gluten-free</option>
+            <option value="other" data-i18n="dOther">Other</option>
+          </select>
+        </div>
+        <div class="field" id="other-wrap" hidden>
+          <label for="f-other" data-i18n="fOther">Tell us what you need</label>
+          <input id="f-other" name="other" aria-describedby="e-other">
+          <p class="err" id="e-other"></p>
+        </div>
+        <div class="field">
+          <label class="check"><input type="checkbox" id="f-consent" name="consent" aria-describedby="e-consent"><span data-i18n="fConsent">I agree that my details are used only to manage this registration.</span></label>
+          <p class="err" id="e-consent"></p>
+        </div>
+        <button class="btn btn-acid btn-lg" type="submit" data-i18n="register">Register</button>
+        <p class="demo" data-i18n="demo">Demo form: nothing is sent or stored.</p>
+      </form>
+      <div class="panel done" id="done" hidden tabindex="-1">
+        <h3 data-i18n="doneH">You're on the list</h3>
+        <p id="done-text"></p>
+        <p class="ref"><span data-i18n="doneRef">Reference</span> <b id="done-ref"></b></p>
+        <p class="demo" data-i18n="doneDemo">Demo: nothing was sent.</p>
+      </div>
+      <aside class="summary" aria-live="polite">
+        <p data-i18n="sumH">Your ticket</p>
+        <p class="sum-tier" id="sum-tier" data-i18n="sumNone">Pick a ticket</p>
+        <p class="sum-price" id="sum-price">€0</p>
+        <p class="sum-meta" data-i18n="sumMeta">Sat 17 April 2027 · Depot 7, Riga</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="sec" id="venue" aria-labelledby="ven-h">
+    <h2 class="word" id="ven-h"><span class="fit" data-i18n="venW">VENUE</span></h2>
+    <div class="venue">
+      <svg class="map" viewBox="0 0 600 420" aria-hidden="true" fill="none" stroke-linecap="round">
+        <g stroke="#F3EFE6" stroke-opacity=".28" stroke-width="2">
+          <path d="M0 70h600M0 150h600M0 300h600M0 380h600M90 0v420M210 0v420M330 0v420M470 0v420"/>
+        </g>
+        <path d="M-10 250C80 220 140 280 230 250S380 170 470 200 560 260 620 240" stroke="#F3EFE6" stroke-opacity=".55" stroke-width="26"/>
+        <g stroke="#F3EFE6" stroke-width="3"><path d="M0 110L600 40"/><path d="M0 122L600 52" /></g>
+        <g stroke="#F3EFE6" stroke-width="2"><path d="M60 117v-14M120 110v-14M180 103v-14M240 96v-14M300 89v-14M360 82v-14M420 75v-14M480 68v-14M540 61v-14"/></g>
+        <circle cx="390" cy="125" r="34" fill="#E4FF3A" fill-opacity=".25"/>
+        <circle cx="390" cy="125" r="14" fill="#E4FF3A"/>
+        <circle cx="390" cy="125" r="5" fill="#17151F"/>
+      </svg>
+      <div class="panel venue-info">
+        <h3 data-i18n="vName">Depot 7, Old Rail Yard</h3>
+        <p data-i18n="vAddr">Riga, Latvia. Doors open at 09:30.</p>
+        <ul>
+          <li><b data-i18n="vTramH">Tram</b> <span data-i18n="vTram">Line 7 to the Depot stop, then 3 minutes on foot.</span></li>
+          <li><b data-i18n="vRailH">Train</b> <span data-i18n="vRail">10 minutes' walk from Riga Central Station.</span></li>
+          <li><b data-i18n="vParkH">Parking</b> <span data-i18n="vPark">Limited. Bike racks at the main gate.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq" aria-labelledby="faq-h">
+    <h2 class="faq-h" id="faq-h" data-i18n="faqH">Questions</h2>
+    <div class="faq">
+      <details><summary data-i18n="q1">Are the talks in English or Russian?</summary><p data-i18n="a1">All talks are in English. Slides and the programme are in English and Russian, and speakers take questions in both.</p></details>
+      <details><summary data-i18n="q2">Can I get a refund?</summary><p data-i18n="a2">Yes, a full refund until 17 March 2027. After that you can transfer your ticket instead.</p></details>
+      <details><summary data-i18n="q3">Can I give my ticket to a colleague?</summary><p data-i18n="a3">Yes. Send us their name and email up to the day before the event, free of charge.</p></details>
+      <details><summary data-i18n="q4">Is the venue accessible?</summary><p data-i18n="a4">The hall is on one level with step-free entry, accessible toilets and a quiet room. Tell us in the form if you need anything else.</p></details>
+      <details><summary data-i18n="q5">Will talks be recorded?</summary><p data-i18n="a5">Yes. Every ticket includes the recordings, sent by email about two weeks after the event. Workshops are not recorded.</p></details>
+      <details><summary data-i18n="q6">Can my company get an invoice?</summary><p data-i18n="a6">Yes. Add your company details after registering and we send a VAT invoice within two working days.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p class="mark">Northlight Summit</p>
+  <p data-i18n="fDate">17 April 2027 · Riga</p>
+  <p class="disc" data-i18n="disc">Concept project. Fictional event, fictional people and companies, fictional venue. Not related to any real event. The form does not submit.</p>
+</footer>
+
+<a class="dock btn btn-acid" href="#register" id="dock"><span data-i18n="register">Register</span> · <span data-i18n="chipFrom">from €89</span></a>
+
+<script src="main.js" defer></script>
+</body>
+</html>
